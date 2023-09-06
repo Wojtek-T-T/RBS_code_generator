@@ -4,9 +4,9 @@ import numpy as np
 task_set = []
 
 class RBS_task:
-    def __init__(self, id, A, C, T, D, S, number_of_nodes, number_of_sequences):
+    def __init__(self, id, P, A, C, T, D, S, number_of_nodes, number_of_sequences):
         self.id = id
-        self.priority = 0
+        self.priority = P
         self.adj = A
         self.ex_times = C
         self.period = T
@@ -49,6 +49,7 @@ def import_taskset():
         T = int(task['T'])
         D = int(task['T'])
         S = list(task['SEQ'])
+        P = task['P']
         CPU = list(task['AFF'])
 
         #Compute the number of nodes
@@ -62,7 +63,7 @@ def import_taskset():
         number_of_sequences = len(S)
         
         #Add task to taskset list
-        imported_task = RBS_task(id, compute_adj_matrix(E, number_of_nodes), C, T, D, S, number_of_nodes, number_of_sequences)
+        imported_task = RBS_task(id, P, compute_adj_matrix(E, number_of_nodes), C, T, D, S, number_of_nodes, number_of_sequences)
         task_set.append(imported_task)
 
     f.close()
@@ -237,8 +238,9 @@ def generate_seq_c_file():
     string = "\nstruct task_data *tasks_data[20] = {&task1_data" 
     sequencesC.write(string) 
     for task in task_set:
-        if task.id != 1:
+        if not(task.id == 1):
             string = ", &task" + str(task.id) + "_data"
+            sequencesC.write(string) 
     sequencesC.write("};\n") 
 
 
