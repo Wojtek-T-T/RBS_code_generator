@@ -302,6 +302,12 @@ def generate_seq_h_file():
         string = "void *(*seq_func_ptr_t" + str(task.id) + "["+ str(task.number_of_sequences) + "])();\n"
         sequencesH.write(string)
 
+    number_of_sequences_tot = 0
+    for task in task_set:
+        number_of_sequences_tot = number_of_sequences_tot + task.number_of_sequences
+    string = "\nvoid *(*seq_func_ptr[" + str(number_of_sequences_tot) + "])();\n"
+    sequencesH.write(string)
+
     #generate array with node functions pointers
     sequencesH.write("\n")
     sequencesH.write("//node functions pointers\n")
@@ -382,7 +388,7 @@ def generate_workload_h_file():
     workloadH.write("#define _GNU_SOURCE\n")
     workloadH.write("#include <stdio.h>\n")
     workloadH.write("#include <stdlib.h>\n\n")
-    workloadH.write("#include <otw.h>\n\n")
+    workloadH.write("#include \"otw.h\"\n\n")
 
     #generate nodes functions
     workloadH.write("\n")
