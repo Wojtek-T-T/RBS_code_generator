@@ -1,0 +1,619 @@
+NEW_JOB_RELEASED, task 1, job 1, at cycle: 394137.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 1, at cycle: 394255.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 1, at cycle: 394426.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 1, at cycle: 394442.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 1, at cycle: 394458.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 1, at cycle: 394467.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 1, at cycle: 394547.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 1, at cycle: 394550.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 1, at cycle: 394629.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 1, at cycle: 394632.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 1, at cycle: 394668.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 1, at cycle: 394677.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 1, at cycle: 394702.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 1, at cycle: 394792.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 1, at cycle: 394795.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 1, at cycle: 394828.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 1, at cycle: 394830.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 1, at cycle: 394949.000000
+NEW_JOB_RELEASED, task 2, job 1, at cycle: 491714.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 1, at cycle: 491807.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 1, at cycle: 491898.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 1, at cycle: 491913.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 1, at cycle: 491932.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 1, at cycle: 491938.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 1, at cycle: 491997.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 1, at cycle: 491999.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 1, at cycle: 492021.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 1, at cycle: 492023.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 1, at cycle: 492077.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 1, at cycle: 492080.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 1, at cycle: 492163.000000
+NEW_JOB_RELEASED, task 1, job 2, at cycle: 511100.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 2, at cycle: 511202.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 2, at cycle: 511287.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 2, at cycle: 511301.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 2, at cycle: 511320.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 2, at cycle: 511326.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 2, at cycle: 511405.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 2, at cycle: 511408.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 2, at cycle: 511427.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 2, at cycle: 511429.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 2, at cycle: 511453.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 2, at cycle: 511461.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 2, at cycle: 511485.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 2, at cycle: 511546.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 2, at cycle: 511548.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 2, at cycle: 511616.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 2, at cycle: 511618.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 2, at cycle: 511702.000000
+NEW_JOB_RELEASED, task 1, job 3, at cycle: 628103.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 3, at cycle: 628188.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 3, at cycle: 628264.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 3, at cycle: 628277.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 3, at cycle: 628293.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 3, at cycle: 628298.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 3, at cycle: 628366.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 3, at cycle: 628368.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 3, at cycle: 628385.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 3, at cycle: 628387.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 3, at cycle: 628410.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 3, at cycle: 628418.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 3, at cycle: 628438.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 3, at cycle: 628490.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 3, at cycle: 628492.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 3, at cycle: 628547.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 3, at cycle: 628549.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 3, at cycle: 628621.000000
+NEW_JOB_RELEASED, task 2, job 2, at cycle: 706296.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 2, at cycle: 706393.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 2, at cycle: 706481.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 2, at cycle: 706495.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 2, at cycle: 706513.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 2, at cycle: 706521.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 2, at cycle: 706579.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 2, at cycle: 706582.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 2, at cycle: 706599.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 2, at cycle: 706601.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 2, at cycle: 706606.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 2, at cycle: 706609.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 2, at cycle: 706693.000000
+NEW_JOB_RELEASED, task 1, job 4, at cycle: 745112.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 4, at cycle: 745211.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 4, at cycle: 745301.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 4, at cycle: 745316.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 4, at cycle: 745334.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 4, at cycle: 745341.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 4, at cycle: 745427.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 4, at cycle: 745430.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 4, at cycle: 745442.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 4, at cycle: 745444.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 4, at cycle: 745468.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 4, at cycle: 745477.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 4, at cycle: 745501.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 4, at cycle: 745561.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 4, at cycle: 745563.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 4, at cycle: 745628.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 4, at cycle: 745630.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 4, at cycle: 745714.000000
+NEW_JOB_RELEASED, task 1, job 5, at cycle: 862099.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 5, at cycle: 862182.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 5, at cycle: 862258.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 5, at cycle: 862270.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 5, at cycle: 862286.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 5, at cycle: 862293.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 5, at cycle: 862359.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 5, at cycle: 862361.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 5, at cycle: 862378.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 5, at cycle: 862380.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 5, at cycle: 862402.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 5, at cycle: 862439.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 5, at cycle: 862459.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 5, at cycle: 862511.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 5, at cycle: 862513.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 5, at cycle: 862567.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 5, at cycle: 862569.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 5, at cycle: 862640.000000
+NEW_JOB_RELEASED, task 2, job 3, at cycle: 920886.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 3, at cycle: 921055.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 3, at cycle: 921142.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 3, at cycle: 921156.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 3, at cycle: 921174.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 3, at cycle: 921182.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 3, at cycle: 921240.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 3, at cycle: 921242.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 3, at cycle: 921259.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 3, at cycle: 921261.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 3, at cycle: 921269.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 3, at cycle: 921271.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 3, at cycle: 921355.000000
+NEW_JOB_RELEASED, task 1, job 6, at cycle: 979118.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 6, at cycle: 979213.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 6, at cycle: 979300.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 6, at cycle: 979316.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 6, at cycle: 979336.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 6, at cycle: 979343.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 6, at cycle: 979421.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 6, at cycle: 979423.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 6, at cycle: 979442.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 6, at cycle: 979444.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 6, at cycle: 979470.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 6, at cycle: 979479.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 6, at cycle: 979503.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 6, at cycle: 979563.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 6, at cycle: 979565.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 6, at cycle: 979629.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 6, at cycle: 979631.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 6, at cycle: 979714.000000
+NEW_JOB_RELEASED, task 1, job 7, at cycle: 1096118.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 7, at cycle: 1096215.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 7, at cycle: 1096300.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 7, at cycle: 1096314.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 7, at cycle: 1096333.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 7, at cycle: 1096340.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 7, at cycle: 1096420.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 7, at cycle: 1096422.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 7, at cycle: 1096439.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 7, at cycle: 1096442.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 7, at cycle: 1096466.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 7, at cycle: 1096475.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 7, at cycle: 1096498.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 7, at cycle: 1096559.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 7, at cycle: 1096561.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 7, at cycle: 1096625.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 7, at cycle: 1096627.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 7, at cycle: 1096711.000000
+NEW_JOB_RELEASED, task 2, job 4, at cycle: 1135471.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 4, at cycle: 1135563.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 4, at cycle: 1135653.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 4, at cycle: 1135668.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 4, at cycle: 1135687.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 4, at cycle: 1135694.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 4, at cycle: 1135753.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 4, at cycle: 1135755.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 4, at cycle: 1135772.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 4, at cycle: 1135774.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 4, at cycle: 1135780.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 4, at cycle: 1135782.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 4, at cycle: 1135865.000000
+NEW_JOB_RELEASED, task 1, job 8, at cycle: 1213113.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 8, at cycle: 1213206.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 8, at cycle: 1213347.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 8, at cycle: 1213362.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 8, at cycle: 1213382.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 8, at cycle: 1213389.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 8, at cycle: 1213467.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 8, at cycle: 1213469.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 8, at cycle: 1213487.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 8, at cycle: 1213489.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 8, at cycle: 1213516.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 8, at cycle: 1213524.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 8, at cycle: 1213552.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 8, at cycle: 1213608.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 8, at cycle: 1213610.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 8, at cycle: 1213679.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 8, at cycle: 1213681.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 8, at cycle: 1213765.000000
+NEW_JOB_RELEASED, task 1, job 9, at cycle: 1330115.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 9, at cycle: 1330269.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 9, at cycle: 1330355.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 9, at cycle: 1330370.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 9, at cycle: 1330389.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 9, at cycle: 1330396.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 9, at cycle: 1330474.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 9, at cycle: 1330476.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 9, at cycle: 1330496.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 9, at cycle: 1330498.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 9, at cycle: 1330523.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 9, at cycle: 1330532.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 9, at cycle: 1330555.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 9, at cycle: 1330616.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 9, at cycle: 1330618.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 9, at cycle: 1330681.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 9, at cycle: 1330683.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 9, at cycle: 1330766.000000
+NEW_JOB_RELEASED, task 2, job 5, at cycle: 1350040.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 5, at cycle: 1350123.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 5, at cycle: 1350209.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 5, at cycle: 1350223.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 5, at cycle: 1350242.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 5, at cycle: 1350248.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 5, at cycle: 1350308.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 5, at cycle: 1350309.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 5, at cycle: 1350326.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 5, at cycle: 1350328.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 5, at cycle: 1350334.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 5, at cycle: 1350336.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 5, at cycle: 1350420.000000
+NEW_JOB_RELEASED, task 1, job 10, at cycle: 1447124.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 10, at cycle: 1447217.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 10, at cycle: 1447302.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 10, at cycle: 1447317.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 10, at cycle: 1447336.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 10, at cycle: 1447343.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 10, at cycle: 1447423.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 10, at cycle: 1447425.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 10, at cycle: 1447442.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 10, at cycle: 1447444.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 10, at cycle: 1447469.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 10, at cycle: 1447477.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 10, at cycle: 1447501.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 10, at cycle: 1447562.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 10, at cycle: 1447564.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 10, at cycle: 1447626.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 10, at cycle: 1447630.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 10, at cycle: 1447714.000000
+NEW_JOB_RELEASED, task 1, job 11, at cycle: 1564114.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 11, at cycle: 1564204.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 11, at cycle: 1564291.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 11, at cycle: 1564305.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 11, at cycle: 1564324.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 11, at cycle: 1564330.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 11, at cycle: 1564409.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 11, at cycle: 1564411.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 11, at cycle: 1564431.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 11, at cycle: 1564433.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 11, at cycle: 1564456.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 11, at cycle: 1564499.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 11, at cycle: 1564523.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 11, at cycle: 1564598.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 11, at cycle: 1564600.000000
+NEW_JOB_RELEASED, task 2, job 6, at cycle: 1564644.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 11, at cycle: 1564648.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 11, at cycle: 1564650.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 6, at cycle: 1564718.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 11, at cycle: 1564734.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 6, at cycle: 1564803.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 6, at cycle: 1564817.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 6, at cycle: 1564836.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 6, at cycle: 1564843.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 6, at cycle: 1564901.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 6, at cycle: 1564903.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 6, at cycle: 1564921.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 6, at cycle: 1564923.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 6, at cycle: 1564928.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 6, at cycle: 1564930.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 6, at cycle: 1565014.000000
+NEW_JOB_RELEASED, task 1, job 12, at cycle: 1681114.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 12, at cycle: 1681203.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 12, at cycle: 1681288.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 12, at cycle: 1681302.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 12, at cycle: 1681321.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 12, at cycle: 1681328.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 12, at cycle: 1681406.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 12, at cycle: 1681408.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 12, at cycle: 1681428.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 12, at cycle: 1681430.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 12, at cycle: 1681455.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 12, at cycle: 1681463.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 12, at cycle: 1681487.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 12, at cycle: 1681548.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 12, at cycle: 1681550.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 12, at cycle: 1681612.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 12, at cycle: 1681614.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 12, at cycle: 1681698.000000
+NEW_JOB_RELEASED, task 2, job 7, at cycle: 1779223.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 7, at cycle: 1779312.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 7, at cycle: 1779401.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 7, at cycle: 1779415.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 7, at cycle: 1779432.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 7, at cycle: 1779441.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 7, at cycle: 1779501.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 7, at cycle: 1779503.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 7, at cycle: 1779516.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 7, at cycle: 1779518.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 7, at cycle: 1779528.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 7, at cycle: 1779530.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 7, at cycle: 1779615.000000
+NEW_JOB_RELEASED, task 1, job 13, at cycle: 1798110.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 13, at cycle: 1798213.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 13, at cycle: 1798298.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 13, at cycle: 1798312.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 13, at cycle: 1798331.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 13, at cycle: 1798338.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 13, at cycle: 1798416.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 13, at cycle: 1798418.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 13, at cycle: 1798438.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 13, at cycle: 1798440.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 13, at cycle: 1798465.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 13, at cycle: 1798473.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 13, at cycle: 1798496.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 13, at cycle: 1798572.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 13, at cycle: 1798574.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 13, at cycle: 1798623.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 13, at cycle: 1798625.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 13, at cycle: 1798709.000000
+NEW_JOB_RELEASED, task 1, job 14, at cycle: 1915104.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 14, at cycle: 1915181.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 14, at cycle: 1915255.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 14, at cycle: 1915267.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 14, at cycle: 1915283.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 14, at cycle: 1915289.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 14, at cycle: 1915356.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 14, at cycle: 1915358.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 14, at cycle: 1915382.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 14, at cycle: 1915384.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 14, at cycle: 1915398.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 14, at cycle: 1915405.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 14, at cycle: 1915425.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 14, at cycle: 1915478.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 14, at cycle: 1915480.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 14, at cycle: 1915533.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 14, at cycle: 1915535.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 14, at cycle: 1915607.000000
+NEW_JOB_RELEASED, task 2, job 8, at cycle: 1993802.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 8, at cycle: 1993879.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 8, at cycle: 1993954.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 8, at cycle: 1993965.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 8, at cycle: 1993982.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 8, at cycle: 1993987.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 8, at cycle: 1994038.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 8, at cycle: 1994040.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 8, at cycle: 1994056.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 8, at cycle: 1994058.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 8, at cycle: 1994060.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 8, at cycle: 1994062.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 8, at cycle: 1994134.000000
+NEW_JOB_RELEASED, task 1, job 15, at cycle: 2032086.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 15, at cycle: 2032165.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 15, at cycle: 2032238.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 15, at cycle: 2032249.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 15, at cycle: 2032265.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 15, at cycle: 2032271.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 15, at cycle: 2032338.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 15, at cycle: 2032339.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 15, at cycle: 2032357.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 15, at cycle: 2032358.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 15, at cycle: 2032379.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 15, at cycle: 2032386.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 15, at cycle: 2032405.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 15, at cycle: 2032458.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 15, at cycle: 2032460.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 15, at cycle: 2032513.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 15, at cycle: 2032515.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 15, at cycle: 2032587.000000
+NEW_JOB_RELEASED, task 1, job 16, at cycle: 2149097.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 16, at cycle: 2149184.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 16, at cycle: 2149258.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 16, at cycle: 2149270.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 16, at cycle: 2149287.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 16, at cycle: 2149292.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 16, at cycle: 2149360.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 16, at cycle: 2149362.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 16, at cycle: 2149377.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 16, at cycle: 2149379.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 16, at cycle: 2149401.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 16, at cycle: 2149408.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 16, at cycle: 2149427.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 16, at cycle: 2149480.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 16, at cycle: 2149482.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 16, at cycle: 2149535.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 16, at cycle: 2149537.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 16, at cycle: 2149609.000000
+NEW_JOB_RELEASED, task 2, job 9, at cycle: 2208391.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 9, at cycle: 2208488.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 9, at cycle: 2208574.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 9, at cycle: 2208587.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 9, at cycle: 2208607.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 9, at cycle: 2208613.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 9, at cycle: 2208672.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 9, at cycle: 2208673.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 9, at cycle: 2208693.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 9, at cycle: 2208698.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 5, job 9, at cycle: 2208739.000000
+SEQUENCE_TERMINATED, task 2, sequence 3, before node 5, job 9, at cycle: 2208744.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 5, job 9, at cycle: 2208824.000000
+NEW_JOB_RELEASED, task 1, job 17, at cycle: 2266103.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 17, at cycle: 2266190.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 17, at cycle: 2266275.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 17, at cycle: 2266289.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 17, at cycle: 2266309.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 17, at cycle: 2266314.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 17, at cycle: 2266394.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 17, at cycle: 2266397.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 17, at cycle: 2266414.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 17, at cycle: 2266416.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 17, at cycle: 2266440.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 17, at cycle: 2266448.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 17, at cycle: 2266471.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 17, at cycle: 2266533.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 17, at cycle: 2266535.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 17, at cycle: 2266597.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 17, at cycle: 2266599.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 17, at cycle: 2266682.000000
+NEW_JOB_RELEASED, task 1, job 18, at cycle: 2383105.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 18, at cycle: 2383188.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 18, at cycle: 2383315.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 18, at cycle: 2383330.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 18, at cycle: 2383350.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 18, at cycle: 2383355.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 18, at cycle: 2383436.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 18, at cycle: 2383438.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 18, at cycle: 2383455.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 18, at cycle: 2383457.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 18, at cycle: 2383481.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 18, at cycle: 2383490.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 18, at cycle: 2383513.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 18, at cycle: 2383575.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 18, at cycle: 2383577.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 18, at cycle: 2383638.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 18, at cycle: 2383640.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 18, at cycle: 2383724.000000
+NEW_JOB_RELEASED, task 2, job 10, at cycle: 2422986.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 10, at cycle: 2423100.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 10, at cycle: 2423186.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 10, at cycle: 2423201.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 10, at cycle: 2423220.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 10, at cycle: 2423226.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 10, at cycle: 2423313.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 10, at cycle: 2423315.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 10, at cycle: 2423335.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 10, at cycle: 2423337.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 10, at cycle: 2423361.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 10, at cycle: 2423363.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 10, at cycle: 2423447.000000
+NEW_JOB_RELEASED, task 1, job 19, at cycle: 2500110.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 19, at cycle: 2500216.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 19, at cycle: 2500304.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 19, at cycle: 2500319.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 19, at cycle: 2500339.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 19, at cycle: 2500345.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 19, at cycle: 2500424.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 19, at cycle: 2500427.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 19, at cycle: 2500444.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 19, at cycle: 2500446.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 19, at cycle: 2500473.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 19, at cycle: 2500482.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 19, at cycle: 2500505.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 19, at cycle: 2500566.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 19, at cycle: 2500568.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 19, at cycle: 2500631.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 19, at cycle: 2500632.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 19, at cycle: 2500717.000000
+NEW_JOB_RELEASED, task 1, job 20, at cycle: 2617148.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 20, at cycle: 2617239.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 20, at cycle: 2617313.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 20, at cycle: 2617324.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 20, at cycle: 2617342.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 20, at cycle: 2617346.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 20, at cycle: 2617415.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 20, at cycle: 2617417.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 20, at cycle: 2617431.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 20, at cycle: 2617433.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 20, at cycle: 2617457.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 20, at cycle: 2617465.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 20, at cycle: 2617484.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 20, at cycle: 2617537.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 20, at cycle: 2617539.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 20, at cycle: 2617592.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 20, at cycle: 2617593.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 20, at cycle: 2617665.000000
+NEW_JOB_RELEASED, task 2, job 11, at cycle: 2637543.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 11, at cycle: 2637609.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 11, at cycle: 2637681.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 11, at cycle: 2637693.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 11, at cycle: 2637709.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 11, at cycle: 2637714.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 11, at cycle: 2637765.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 11, at cycle: 2637766.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 11, at cycle: 2637782.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 11, at cycle: 2637783.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 11, at cycle: 2637787.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 11, at cycle: 2637789.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 11, at cycle: 2637861.000000
+NEW_JOB_RELEASED, task 1, job 21, at cycle: 2734115.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 21, at cycle: 2734214.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 21, at cycle: 2734301.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 21, at cycle: 2734316.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 21, at cycle: 2734334.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 21, at cycle: 2734340.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 21, at cycle: 2734420.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 21, at cycle: 2734423.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 21, at cycle: 2734442.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 21, at cycle: 2734444.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 21, at cycle: 2734466.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 21, at cycle: 2734474.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 21, at cycle: 2734497.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 21, at cycle: 2734559.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 21, at cycle: 2734562.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 21, at cycle: 2734622.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 21, at cycle: 2734624.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 21, at cycle: 2734709.000000
+NEW_JOB_RELEASED, task 1, job 22, at cycle: 2851063.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 22, at cycle: 2851109.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 22, at cycle: 2851146.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 22, at cycle: 2851152.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 22, at cycle: 2851159.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 22, at cycle: 2851161.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 22, at cycle: 2851194.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 22, at cycle: 2851195.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 22, at cycle: 2851203.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 22, at cycle: 2851203.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 22, at cycle: 2851213.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 22, at cycle: 2851217.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 22, at cycle: 2851226.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 22, at cycle: 2851250.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 22, at cycle: 2851251.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 22, at cycle: 2851279.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 22, at cycle: 2851279.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 22, at cycle: 2851313.000000
+NEW_JOB_RELEASED, task 2, job 12, at cycle: 2852103.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 12, at cycle: 2852143.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 12, at cycle: 2852178.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 12, at cycle: 2852184.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 12, at cycle: 2852190.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 12, at cycle: 2852192.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 12, at cycle: 2852217.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 12, at cycle: 2852218.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 12, at cycle: 2852225.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 12, at cycle: 2852226.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 5, job 12, at cycle: 2852243.000000
+SEQUENCE_TERMINATED, task 2, sequence 3, before node 5, job 12, at cycle: 2852267.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 5, job 12, at cycle: 2852276.000000
+NEW_JOB_RELEASED, task 1, job 23, at cycle: 2968066.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 23, at cycle: 2968118.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 23, at cycle: 2968153.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 23, at cycle: 2968159.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 23, at cycle: 2968167.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 23, at cycle: 2968170.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 23, at cycle: 2968203.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 23, at cycle: 2968204.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 23, at cycle: 2968210.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 23, at cycle: 2968211.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 23, at cycle: 2968221.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 23, at cycle: 2968225.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 23, at cycle: 2968234.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 23, at cycle: 2968258.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 23, at cycle: 2968259.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 23, at cycle: 2968284.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 23, at cycle: 2968285.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 23, at cycle: 2968319.000000
+NEW_JOB_RELEASED, task 2, job 13, at cycle: 3066691.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 1, job 13, at cycle: 3066727.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 1, job 13, at cycle: 3066761.000000
+NODE_EXECUTION_STARTED, task 2, sequence 1, node 2, job 13, at cycle: 3066767.000000
+NODE_EXECUTION_STARTED, task 2, sequence 2, node 3, job 13, at cycle: 3066775.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 4, job 13, at cycle: 3066777.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 1, node 2, job 13, at cycle: 3066801.000000
+SEQUENCE_TERMINATED, task 2, sequence 1, before node 5, job 13, at cycle: 3066801.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 2, node 3, job 13, at cycle: 3066811.000000
+SEQUENCE_TERMINATED, task 2, sequence 2, before node 5, job 13, at cycle: 3066811.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 4, job 13, at cycle: 3066812.000000
+NODE_EXECUTION_STARTED, task 2, sequence 3, node 5, job 13, at cycle: 3066813.000000
+NODE_EXECUTION_FINISHED, task 2, sequence 3, node 5, job 13, at cycle: 3066847.000000
+NEW_JOB_RELEASED, task 1, job 24, at cycle: 3085057.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 24, at cycle: 3085100.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 24, at cycle: 3085134.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 24, at cycle: 3085139.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 24, at cycle: 3085147.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 24, at cycle: 3085150.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 24, at cycle: 3085182.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 24, at cycle: 3085183.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 24, at cycle: 3085190.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 24, at cycle: 3085190.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 24, at cycle: 3085200.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 24, at cycle: 3085204.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 24, at cycle: 3085213.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 24, at cycle: 3085237.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 24, at cycle: 3085238.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 24, at cycle: 3085264.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 24, at cycle: 3085265.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 24, at cycle: 3085298.000000
+NEW_JOB_RELEASED, task 1, job 25, at cycle: 3202063.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 1, job 25, at cycle: 3202101.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 1, job 25, at cycle: 3202135.000000
+NODE_EXECUTION_STARTED, task 1, sequence 1, node 2, job 25, at cycle: 3202141.000000
+NODE_EXECUTION_STARTED, task 1, sequence 2, node 3, job 25, at cycle: 3202147.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 4, job 25, at cycle: 3202151.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 2, node 3, job 25, at cycle: 3202182.000000
+SEQUENCE_TERMINATED, task 1, sequence 2, before node 5, job 25, at cycle: 3202182.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 1, node 2, job 25, at cycle: 3202191.000000
+SEQUENCE_TERMINATED, task 1, sequence 1, before node 5, job 25, at cycle: 3202192.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 4, job 25, at cycle: 3202202.000000
+NODE_EXECUTION_STARTED, task 1, sequence 3, node 5, job 25, at cycle: 3202205.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 6, job 25, at cycle: 3202214.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 3, node 5, job 25, at cycle: 3202239.000000
+SEQUENCE_TERMINATED, task 1, sequence 3, before node 7, job 25, at cycle: 3202240.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 6, job 25, at cycle: 3202265.000000
+NODE_EXECUTION_STARTED, task 1, sequence 4, node 7, job 25, at cycle: 3202265.000000
+NODE_EXECUTION_FINISHED, task 1, sequence 4, node 7, job 25, at cycle: 3202299.000000
