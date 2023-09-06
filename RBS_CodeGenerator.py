@@ -91,7 +91,7 @@ def generate_seq_c_file():
     sequencesC.write("\n")
     sequencesC.write("//node functions pointers\n")
     for task in task_set:
-        string = "void *(*nodes_func_ptr_t"+ str(task.id) + "[" + str(task.number_of_nodes) + "])() = {"
+        string = "void (*nodes_func_ptr_t"+ str(task.id) + "[" + str(task.number_of_nodes) + "])() = {"
         sequencesC.write(string)
         for i in range(1, (task.number_of_nodes + 1)):
             if i == 1:
@@ -101,6 +101,20 @@ def generate_seq_c_file():
                 string = ", node_" + str(task.id) + "_" + str(i)
                 sequencesC.write(string)
         sequencesC.write("};\n")
+
+    #generate structure with all function pointers
+    total_number_of_seq = 0
+    for task in task_set:
+        total_number_of_seq = total_number_of_seq + task.number_of_sequences
+    string = "\nvoid *(* seq_func_ptr[" + str(total_number_of_seq) + "])() = {sequence_1_1_function" 
+    sequencesC.write(string)
+    for task in task_set:
+        for i in range(1, task.number_of_sequences +1 ):
+            if not(task.id == 1 and i == 1):
+                string = ", sequence_" + str(task.id) + "_" + str(i) + "_function"
+                sequencesC.write(string)
+
+    sequencesC.write("};\n")
 
     #generate arrays with precedence constraints
     sequencesC.write("\n")
@@ -144,7 +158,7 @@ def generate_seq_c_file():
         #make a list and set all fields to 0
         nodes_list = [0 for i in range(task.number_of_nodes)]
 
-        string = "u_int32_t T" + str(task.id) + "_sequence_heads[" + str(task.number_of_sequences) + "] = {"
+        string = "u_int32_t T" + str(task.id) + "_sequence_heads[" + str(task.number_of_nodes) + "] = {"
         sequencesC.write(string)
         for element in task.sequences:
             index = element[0] - 1
@@ -198,12 +212,18 @@ def generate_seq_c_file():
         string = ", .last_added_job = NULL"
         sequencesC.write(string) 
 
+        string = ", .seq_threads = task" + str(task.id) + "_threads"
+        sequencesC.write(string) 
+
+        string = ", .period = " + str(task.period)
+        sequencesC.write(string) 
+
         string = ", \n.func = {"
         sequencesC.write(string)
 
         for x in range(1,task.number_of_nodes+1):
 
-            if x == 0:
+            if (x-1) == 0:
                 string = "node_" + str(task.id) + "_" + str(x)
                 sequencesC.write(string)
 
@@ -212,6 +232,16 @@ def generate_seq_c_file():
                 sequencesC.write(string)
 
         sequencesC.write("}}; \n")
+
+    #generate structure with pointer to tasks
+    string = "\nstruct task_data *tasks_data[20] = {&task1_data" 
+    sequencesC.write(string) 
+    for task in task_set:
+        if task.id != 1:
+            string = ", &task" + str(task.id) + "_data"
+    sequencesC.write("};\n") 
+
+
 
     #generate sequences functions
     sequencesC.write("\n")
@@ -222,7 +252,7 @@ def generate_seq_c_file():
             string = "void *sequence_" + str(task.id) + "_" + str((task.sequences.index(element) + 1)) + "_function(void *arguments)\n{\n"
             sequencesC.write(string)
 
-            string = "set_cpu(" + str((task.sequences.index(element))) + ")\n"
+            string = "set_cpu(" + str((task.sequences.index(element))) + ");\n"
             sequencesC.write(string)
 
             sequencesC.write(" struct sequence_data *seq_data = (struct sequence_data*) arguments;\n")
@@ -241,6 +271,7 @@ def generate_seq_c_file():
             sequencesC.write("   FinishJob(seq_data);\n")
             sequencesC.write("  }\n}\n")
 
+
     sequencesC.close()
 
 def generate_seq_h_file():
@@ -252,12 +283,17 @@ def generate_seq_h_file():
     sequencesH.write("#include \"rbs_lib.h\"\n")
     sequencesH.write("#include \"workload.h\"\n")
 
+    string = "#define number_of_tasks " + str(len(task_set)) + "\n"
+    sequencesH.write(string)
+
     #generate task data structures
     sequencesH.write("\n")
     sequencesH.write("//tasks data structures\n")
     for task in task_set:
         string = "struct task_data task" + str(task.id) + "_data;\n"
         sequencesH.write(string)
+
+    sequencesH.write("struct task_data *tasks_data[20];\n")
 
     #generate array with sequence functions pointers
     sequencesH.write("\n")
@@ -270,7 +306,7 @@ def generate_seq_h_file():
     sequencesH.write("\n")
     sequencesH.write("//node functions pointers\n")
     for task in task_set:
-        string = "void *(*nodes_func_ptr_t" + str(task.id) + "["+ str(task.number_of_nodes) + "])();\n"
+        string = "void (*nodes_func_ptr_t" + str(task.id) + "["+ str(task.number_of_nodes) + "])();\n"
         sequencesH.write(string)
 
     #generate arrays with v and h precedence constraints
@@ -311,45 +347,13 @@ def generate_seq_h_file():
         for i in range(1, task.number_of_sequences + 1):
             string = "void *sequence_" + str(task.id) + "_"+ str(i) + "_function(void *arguments);\n"
             sequencesH.write(string)
-        
+    
+    sequencesH.write("#endif\n")
     sequencesH.close()
 
 def generate_workload_c_file():
     workloadC = open("workload.c","w")
     workloadC.write("#include \"workload.h\"\n")
-
-    #workloadC.write("volatile u_int32_t mask[11] = {1,2,3,4,5,10,5,4,3,2,1};\n")
-
-    #generate workload creator function
-    #workloadC.write("void create_workload()\n{\n")
-    #workloadC.write(" for(int p = 0; p <10001; p++)\n {\n")
-    #workloadC.write("  conv_array[p] = p+9;\n")
-    #workloadC.write(" }\n}\n")
-
-    #one time unit function
-    #workloadC.write("one_time_unit_workload()\n{\n")
-
-    # workloadC.write("  int temp_value = 0;\n")
-    # workloadC.write("\n struct timespec tim;\n")
-    # workloadC.write("\n clock_gettime(CLOCK_REALTIME, &tim);\n")
-
-    # workloadC.write("\n int rest = tim.tv_nsec % 9;\n")
-    # workloadC.write("\n int start_index = rest*1000;\n")
-
-    # workloadC.write("\n for(int big_index = start_index; big_index < start_index + 100; big_index++)\n {\n")
-
-    # workloadC.write("  for(int small_ind = -5; small_ind <6; small_ind++)\n  {\n")
-
-    # workloadC.write("    int index = big_index + small_ind;\n")
-    # workloadC.write("    if(index < 0 || index > 9999)\n    {\n     ;\n    }\n")
-    # workloadC.write("    else\n    {\n     temp_value = temp_value + conv_array[index] * mask[(small_ind + 5)];\n    }\n")
-
-    # workloadC.write("\n  }\n")
-    # workloadC.write("\n }\n")
-
-    # workloadC.write(" temp_value = temp_value / 100;\n")
-    # workloadC.write(" conv_array[start_index + 50] = temp_value;\n")
-    # workloadC.write("}\n")
 
     #generate node functions
     workloadC.write("\n")
@@ -380,15 +384,6 @@ def generate_workload_h_file():
     workloadH.write("#include <stdlib.h>\n\n")
     workloadH.write("#include <otw.h>\n\n")
 
-    #workloadH.write("volatile u_int32_t conv_array[10000];\n")
-    #workloadH.write("volatile u_int32_t mask[11];\n")
-
-    #workloadH.write("\n//create workload\n")
-    #workloadH.write("void create_workload();\n")
-
-    #workloadH.write("\n//one time unit workload\n")
-   # workloadH.write("void one_time_unit_workload();\n\n")
-
     #generate nodes functions
     workloadH.write("\n")
     workloadH.write("//nodes functions prototypes\n")    
@@ -396,6 +391,8 @@ def generate_workload_h_file():
         for node in range(1, task.number_of_nodes + 1):
             string = "void node_" + str(task.id) + "_"+ str(node) + "();\n"
             workloadH.write(string)
+
+    workloadH.write("#endif\n")
 
 
 def generate_otw_c_file():
