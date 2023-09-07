@@ -4,7 +4,7 @@ import numpy as np
 task_set = []
 
 class RBS_task:
-    def __init__(self, id, P, A, C, T, D, S, number_of_nodes, number_of_sequences):
+    def __init__(self, id, P, CPU, A, C, T, D, S, number_of_nodes, number_of_sequences):
         self.id = id
         self.priority = P
         self.adj = A
@@ -12,6 +12,7 @@ class RBS_task:
         self.period = T
         self.deadline = D
         self.sequences = S
+        self.cpu = CPU
         self.number_of_nodes = number_of_nodes
         self.number_of_sequences = number_of_sequences
 
@@ -63,7 +64,7 @@ def import_taskset():
         number_of_sequences = len(S)
         
         #Add task to taskset list
-        imported_task = RBS_task(id, P, compute_adj_matrix(E, number_of_nodes), C, T, D, S, number_of_nodes, number_of_sequences)
+        imported_task = RBS_task(id, P, CPU, compute_adj_matrix(E, number_of_nodes), C, T, D, S, number_of_nodes, number_of_sequences)
         task_set.append(imported_task)
 
     f.close()
@@ -254,7 +255,8 @@ def generate_seq_c_file():
             string = "void *sequence_" + str(task.id) + "_" + str((task.sequences.index(element) + 1)) + "_function(void *arguments)\n{\n"
             sequencesC.write(string)
 
-            string = "set_cpu(" + str((task.sequences.index(element))) + ");\n"
+            cpu_index = task.sequences.index(element)
+            string = "set_cpu(" + str(task.cpu[cpu_index]) + ");\n"
             sequencesC.write(string)
 
             sequencesC.write(" struct sequence_data *seq_data = (struct sequence_data*) arguments;\n")
