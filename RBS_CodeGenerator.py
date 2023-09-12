@@ -39,7 +39,7 @@ def compute_adj_matrix(A, number_of_nodes):
     return adj_matrix
 
 def import_taskset():
-    f = open('taskset2.json', "r")
+    f = open('taskset.json', "r")
     data = json.load(f)
     
     #Parse tasks from JSON file
@@ -52,6 +52,8 @@ def import_taskset():
         S = list(task['SEQ'])
         P = task['P']
         CPU = list(task['AFF'])
+
+        P = 99 - P
 
         #Compute the number of nodes
         number_of_nodes = 0
