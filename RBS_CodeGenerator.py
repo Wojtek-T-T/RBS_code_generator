@@ -258,7 +258,7 @@ def generate_seq_c_file():
             sequencesC.write(string)
 
             cpu_index = task.sequences.index(element)
-            string = "set_cpu(" + str(task.cpu[cpu_index]) + ");\n"
+            string = "set_cpu(" + str(task.cpu[cpu_index]-1) + ");\n"
             sequencesC.write(string)
 
             sequencesC.write(" struct sequence_data *seq_data = (struct sequence_data*) arguments;\n")
