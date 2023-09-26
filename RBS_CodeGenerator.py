@@ -3,6 +3,8 @@ import numpy as np
 
 task_set = []
 
+one_time_unit = 41
+
 class RBS_task:
     def __init__(self, id, P, CPU, A, C, T, D, S, number_of_nodes, number_of_sequences):
         self.id = id
@@ -54,6 +56,7 @@ def import_taskset():
         CPU = list(task['AFF'])
 
         P = 99 - P
+        T = T * one_time_unit
 
         #Compute the number of nodes
         number_of_nodes = 0
@@ -258,7 +261,7 @@ def generate_seq_c_file():
             sequencesC.write(string)
 
             cpu_index = task.sequences.index(element)
-            string = "set_cpu(" + str(task.cpu[cpu_index]-1) + ");\n"
+            string = "set_cpu(" + str(task.cpu[cpu_index] -1) + ");\n"
             sequencesC.write(string)
 
             sequencesC.write(" struct sequence_data *seq_data = (struct sequence_data*) arguments;\n")
@@ -431,7 +434,7 @@ def main():
     generate_seq_c_file()
     generate_workload_h_file()
     generate_workload_c_file()
-    generate_otw_c_file()
+    #generate_otw_c_file()
 
 
 
