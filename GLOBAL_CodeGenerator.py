@@ -133,7 +133,7 @@ def global_c_file():
                     globalC.write(string)
 
             #LOG
-            globalC.write("    int index = int log_event_start(task, node, job, 1)")
+            globalC.write("    int index = log_event_start(task, node, job, 1);")
 
             globalC.write("\n")
             string = "    for(int time_unit = 0; time_unit < " + str(task.ex_times[node-1]) + "; time_unit ++)\n    {\n"
@@ -142,7 +142,7 @@ def global_c_file():
             globalC.write("    }\n")
 
             #LOG
-            globalC.write("    log_event_end(index)")
+            globalC.write("    log_event_end(index);")
 
             #Inform successors
             globalC.write("\n")
@@ -158,10 +158,10 @@ def global_c_file():
     globalC.write(string)
 
     for task in task_set:
-        string = "  sem_init(&semaphore_release[" + str(task.id-1) + "], 0);\n\n"
+        string = "  sem_init(&semaphore_release[" + str(task.id-1) + "], 0, 0);\n\n"
         globalC.write(string)
         for element in task.adj:
-            string = "  sem_init(&semaphore_" + str(task.id) + "_" + str(element[0]) + "_" + str(element[1]) + ", 0);\n"
+            string = "  sem_init(&semaphore_" + str(task.id) + "_" + str(element[0]) + "_" + str(element[1]) + ", 0, 0);\n"
             globalC.write(string)
 
 
@@ -185,7 +185,7 @@ def global_h_file():
     globalH.write("#include <unistd.h>\n")
     globalH.write("#include <stdlib.h>\n\n")
     globalH.write("#include \"otw.h\"\n\n")
-    globalH.write("#include \"log.h\"\n\n\n")
+    globalH.write("#include \"global_lib.h\"\n\n\n")
 
     string = "#define number_of_tasks " + str(len(task_set)) + "\n\n"
     globalH.write(string)
@@ -202,7 +202,7 @@ def global_h_file():
 
     for task in task_set:
         for element in task.adj:
-            string = "sem_t semaphore" + str(task.id) + "_" + str(element[0]) + "_" + str(element[1]) + ";\n"
+            string = "sem_t semaphore_" + str(task.id) + "_" + str(element[0]) + "_" + str(element[1]) + ";\n"
             globalH.write(string)
 
     for task in task_set:
@@ -229,7 +229,8 @@ def main_file():
     main.write("#include <string.h>\n")
     main.write("#include <unistd.h>\n")
     main.write("#include <stdlib.h>\n\n")
-    main.write("#include \"log.h\"\n\n\n")
+    main.write("#include \"global.h\"\n\n\n")
+    main.write("#include \"global_lib.h\"\n\n\n")
 
     main.write("int main()\n{\n")
     main.write("initialize_tasks();\n")
@@ -259,7 +260,7 @@ def main_file():
         main.write("\n\n")
         for node in range(1, task.number_of_nodes +1):
             thread_string = "&task" + str(task.id) + "_node_" + str(node)
-            func_string = "&node_" + str(task.id) + "_" + str(node) + "function"
+            func_string = "&node_" + str(task.id) + "_" + str(node) + "_function"
             attr_string = "&attr[" + str(task.id) + "]"
             string = "result = pthread_create(" + thread_string + ", " + attr_string+ ", "+ func_string + ", NULL);\n"
             main.write(string)
@@ -274,9 +275,11 @@ def main_file():
         string = "job_rel_tim" + str(task.id) + "->period_in_usec = " + str(task.period) + ";\n"
         main.write(string) 
         string = "job_rel_tim" + str(task.id) +"->max_number_of_jobs = 100;\n"
-        main.write(string)      
+        main.write(string)
+        string = "job_rel_tim" + str(task.id) +"->semaphore = &semaphore_release[" + str(task.id -1) + "];\n"
+        main.write(string)        
 
-        string = "pthread_create(&job_release_threads[" + str(task.id) + "], NULL, &job_release_func, (void*) job_rel_tim" + str(task.id) +")\n"
+        string = "pthread_create(&job_release_threads[" + str(task.id) + "], NULL, &job_release_func, (void*) job_rel_tim" + str(task.id) +");\n"
         main.write(string)
 
     main.write("\n\n")
@@ -284,6 +287,8 @@ def main_file():
         string = "pthread_join(job_release_threads[" + str(task.id) + "], NULL);\n"
         main.write(string)
 
+    main.write("\n\n")
+    main.write("print_log();\n")
     
     
     main.write("}\n")
