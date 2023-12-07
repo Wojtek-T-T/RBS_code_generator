@@ -3,7 +3,8 @@ import numpy as np
 
 task_set = []
 
-one_time_unit = 41
+one_time_unit = 30
+time_unit_multiplier = 2
 
 class RBS_task:
     def __init__(self, id, P, CPU, A, C, T, D, S, number_of_nodes, number_of_sequences):
@@ -56,7 +57,11 @@ def import_taskset():
         CPU = list(task['AFF'])
 
         P = 99 - P
-        T = T * one_time_unit
+        T = T * one_time_unit * time_unit_multiplier
+        
+        ex_times_nodes = []
+        for element in C:
+            ex_times_nodes.append(element * time_unit_multiplier)
 
         #Compute the number of nodes
         number_of_nodes = 0
@@ -69,7 +74,7 @@ def import_taskset():
         number_of_sequences = len(S)
         
         #Add task to taskset list
-        imported_task = RBS_task(id, P, CPU, compute_adj_matrix(E, number_of_nodes), C, T, D, S, number_of_nodes, number_of_sequences)
+        imported_task = RBS_task(id, P, CPU, compute_adj_matrix(E, number_of_nodes), ex_times_nodes, T, D, S, number_of_nodes, number_of_sequences)
         task_set.append(imported_task)
 
     f.close()
@@ -77,6 +82,18 @@ def import_taskset():
 def generate_seq_c_file():
     sequencesC = open("sequences.c","w")
     sequencesC.write("#include \"sequences.h\"\n")
+    
+    
+    sequencesC.write("//semaphores\n")
+    for task in task_set:
+        string = "sem_t semaphores_T" + str(task.id) + "[" + str(task.number_of_sequences) + "];\n"
+        sequencesC.write(string)
+        
+    sequencesC.write("//threads\n")
+    for task in task_set:
+        string = "pthread_t task" + str(task.id) + "_threads[" + str(task.number_of_sequences) + "];\n"
+        sequencesC.write(string)       
+        
 
 
     #generate array with sequence functions pointers
@@ -268,11 +285,11 @@ def generate_seq_c_file():
 
             sequencesC.write(" while(true)\n  {\n")
 
-            sequencesC.write("   WaitNextJob(seq_data);\n")
+            sequencesC.write("   RBS_Wait(seq_data);\n")
 
             for item in element:
                 sequencesC.write("\n")
-                string = "   if(TryExecuteNode(seq_data," +  str(item) + ") != 0)\n   {\n" + "     TerminateSequence(seq_data, " + str(item) + ");\n"
+                string = "   if(RBS_Execute(seq_data," +  str(item) + ") != 0)\n   {\n" + "     TerminateSequence(seq_data, " + str(item) + ");\n"
                 sequencesC.write(string)
                 sequencesC.write("     continue;\n   }\n")
 
@@ -299,60 +316,60 @@ def generate_seq_h_file():
     sequencesH.write("\n")
     sequencesH.write("//tasks data structures\n")
     for task in task_set:
-        string = "struct task_data task" + str(task.id) + "_data;\n"
+        string = "extern struct task_data task" + str(task.id) + "_data;\n"
         sequencesH.write(string)
 
-    sequencesH.write("struct task_data *tasks_data[20];\n")
+    sequencesH.write("extern struct task_data *tasks_data[20];\n")
 
     #generate array with sequence functions pointers
     sequencesH.write("\n")
     sequencesH.write("//sequence functions pointers\n")
     for task in task_set:
-        string = "void *(*seq_func_ptr_t" + str(task.id) + "["+ str(task.number_of_sequences) + "])();\n"
+        string = "extern void *(*seq_func_ptr_t" + str(task.id) + "["+ str(task.number_of_sequences) + "])();\n"
         sequencesH.write(string)
 
     number_of_sequences_tot = 0
     for task in task_set:
         number_of_sequences_tot = number_of_sequences_tot + task.number_of_sequences
-    string = "\nvoid *(*seq_func_ptr[" + str(number_of_sequences_tot) + "])();\n"
+    string = "\n extern void *(*seq_func_ptr[" + str(number_of_sequences_tot) + "])();\n"
     sequencesH.write(string)
 
     #generate array with node functions pointers
     sequencesH.write("\n")
     sequencesH.write("//node functions pointers\n")
     for task in task_set:
-        string = "void (*nodes_func_ptr_t" + str(task.id) + "["+ str(task.number_of_nodes) + "])();\n"
+        string = "extern void (*nodes_func_ptr_t" + str(task.id) + "["+ str(task.number_of_nodes) + "])();\n"
         sequencesH.write(string)
 
     #generate arrays with v and h precedence constraints
     sequencesH.write("\n")
     sequencesH.write("//horizontal and vertical precedence constraints\n")
     for task in task_set:
-        string = "u_int32_t T" + str(task.id) + "_precedence_constraints_h["+ str(task.number_of_nodes) + "];\n"
+        string = "extern u_int32_t T" + str(task.id) + "_precedence_constraints_h["+ str(task.number_of_nodes) + "];\n"
         sequencesH.write(string)
-        string = "u_int32_t T" + str(task.id) + "_precedence_constraints_v["+ str(task.number_of_nodes) + "];\n"
+        string = "extern u_int32_t T" + str(task.id) + "_precedence_constraints_v["+ str(task.number_of_nodes) + "];\n"
         sequencesH.write(string)
 
     #generate sequence heads structures
     sequencesH.write("\n")
     sequencesH.write("//arrays with sequence heads\n")
     for task in task_set:
-        string = "u_int32_t T" + str(task.id) + "_sequence_heads["+ str(task.number_of_nodes) + "];\n"
+        string = "extern u_int32_t T" + str(task.id) + "_sequence_heads["+ str(task.number_of_nodes) + "];\n"
         sequencesH.write(string)
 
     #generate array with semaphores
-    sequencesH.write("\n")
-    sequencesH.write("//semaphores\n")
-    for task in task_set:
-        string = "sem_t semaphores_T" + str(task.id) + "["+ str(task.number_of_sequences) + "];\n"
-        sequencesH.write(string)
+    #sequencesH.write("\n")
+    #sequencesH.write("//semaphores\n")
+    #for task in task_set:
+        #string = "extern sem_t semaphores_T" + str(task.id) + "["+ str(task.number_of_sequences) + "];\n"
+        #sequencesH.write(string)
 
     #generate array with threads
-    sequencesH.write("\n")
-    sequencesH.write("//threads\n")
-    for task in task_set:
-        string = "pthread_t task" + str(task.id) + "_threads["+ str(task.number_of_sequences) + "];\n"
-        sequencesH.write(string)
+    #sequencesH.write("\n")
+    #sequencesH.write("//threads\n")
+    #for task in task_set:
+        #string = "extern pthread_t task" + str(task.id) + "_threads["+ str(task.number_of_sequences) + "];\n"
+        #sequencesH.write(string)
 
 
     #generate sequence functions
