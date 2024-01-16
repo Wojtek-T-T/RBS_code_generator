@@ -3,7 +3,7 @@ import numpy as np
 
 task_set = []
 
-one_time_unit = 30
+one_time_unit = 21
 time_unit_multiplier = 2
 
 class RBS_task:
@@ -145,7 +145,7 @@ def generate_seq_c_file():
     sequencesC.write("//precedence constraints\n")    
     for task in task_set:
 
-        string = "u_int32_t T" + str(task.id) + "_precedence_constraints_h[" + str(task.number_of_nodes) + str("] = {")
+        string = "uint64_t T" + str(task.id) + "_precedence_constraints_h[" + str(task.number_of_nodes) + str("] = {")
         sequencesC.write(string)
         for i in range(0, task.number_of_nodes):
             value = list_to_integer(task.adj[i])
@@ -158,7 +158,7 @@ def generate_seq_c_file():
 
         sequencesC.write("};\n")
 
-        string = "u_int32_t T" + str(task.id) + "_precedence_constraints_v[" + str(task.number_of_nodes) + str("] = {")
+        string = "uint64_t T" + str(task.id) + "_precedence_constraints_v[" + str(task.number_of_nodes) + str("] = {")
         sequencesC.write(string)
         for i in range(0, task.number_of_nodes):
             vertical_list = []
@@ -182,7 +182,7 @@ def generate_seq_c_file():
         #make a list and set all fields to 0
         nodes_list = [0 for i in range(task.number_of_nodes)]
 
-        string = "u_int32_t T" + str(task.id) + "_sequence_heads[" + str(task.number_of_nodes) + "] = {"
+        string = "uint64_t T" + str(task.id) + "_sequence_heads[" + str(task.number_of_nodes) + "] = {"
         sequencesC.write(string)
         for element in task.sequences:
             index = element[0] - 1
@@ -345,31 +345,31 @@ def generate_seq_h_file():
     sequencesH.write("\n")
     sequencesH.write("//horizontal and vertical precedence constraints\n")
     for task in task_set:
-        string = "extern u_int32_t T" + str(task.id) + "_precedence_constraints_h["+ str(task.number_of_nodes) + "];\n"
+        string = "extern uint64_t T" + str(task.id) + "_precedence_constraints_h["+ str(task.number_of_nodes) + "];\n"
         sequencesH.write(string)
-        string = "extern u_int32_t T" + str(task.id) + "_precedence_constraints_v["+ str(task.number_of_nodes) + "];\n"
+        string = "extern uint64_t T" + str(task.id) + "_precedence_constraints_v["+ str(task.number_of_nodes) + "];\n"
         sequencesH.write(string)
 
     #generate sequence heads structures
     sequencesH.write("\n")
     sequencesH.write("//arrays with sequence heads\n")
     for task in task_set:
-        string = "extern u_int32_t T" + str(task.id) + "_sequence_heads["+ str(task.number_of_nodes) + "];\n"
+        string = "extern uint64_t T" + str(task.id) + "_sequence_heads["+ str(task.number_of_nodes) + "];\n"
         sequencesH.write(string)
 
     #generate array with semaphores
-    #sequencesH.write("\n")
-    #sequencesH.write("//semaphores\n")
-    #for task in task_set:
-        #string = "extern sem_t semaphores_T" + str(task.id) + "["+ str(task.number_of_sequences) + "];\n"
-        #sequencesH.write(string)
+    sequencesH.write("\n")
+    sequencesH.write("//semaphores\n")
+    for task in task_set:
+        string = "extern sem_t semaphores_T" + str(task.id) + "["+ str(task.number_of_sequences) + "];\n"
+        sequencesH.write(string)
 
     #generate array with threads
-    #sequencesH.write("\n")
-    #sequencesH.write("//threads\n")
-    #for task in task_set:
-        #string = "extern pthread_t task" + str(task.id) + "_threads["+ str(task.number_of_sequences) + "];\n"
-        #sequencesH.write(string)
+    sequencesH.write("\n")
+    sequencesH.write("//threads\n")
+    for task in task_set:
+        string = "extern pthread_t task" + str(task.id) + "_threads["+ str(task.number_of_sequences) + "];\n"
+        sequencesH.write(string)
 
 
     #generate sequence functions
