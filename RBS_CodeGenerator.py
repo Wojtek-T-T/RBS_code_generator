@@ -306,7 +306,7 @@ def generate_seq_h_file():
     #generate includes and defines
     sequencesH.write("#ifndef SEQUENCES_H\n")
     sequencesH.write("#define SEQUENCES_H\n")
-    sequencesH.write("#include \"rbs_lib.h\"\n")
+    sequencesH.write("#include \"../rbs_lib_app/rbs_lib_app.h\"\n")
     sequencesH.write("#include \"workload.h\"\n")
 
     string = "#define number_of_tasks " + str(len(task_set)) + "\n"
